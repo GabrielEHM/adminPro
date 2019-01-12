@@ -1,0 +1,14 @@
+<h3>{{ leyend }} - {{ porcentage }}</h3>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <button class="btn btn-outline-danger" type="button" id="button-addon1" (click)="setValue(-5)">
+        <i class="mdi mdi-minus"></i>
+      </button>
+    </div>
+    <input #txtProgress [(ngModel)]="porcentage" name="porcentage" (ngModelChange)="setExactValue($event)" type="number" class="form-control" aria-label="Porcentage">
+    <div class="input-group-append">
+        <button class="btn btn-outline-danger" type="button" id="button-addon1" (click)="setValue(5)">
+          <i class=" mdi mdi-plus "></i>
+      </button>
+    </div>
+</div>

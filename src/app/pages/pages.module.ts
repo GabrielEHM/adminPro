@@ -9,17 +9,27 @@ import { PagesComponent } from './pages.component';
 // MODULES
 import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
+import { FormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
+// TEMPORAL
+import { IncrementComponent } from '../components/increment/increment.component';
+import { DonnutGraphComponent } from './components/donnut-graph/donnut-graph.component';
+
 
 @NgModule({
     declarations: [
         PagesComponent,
         DashboardComponent,
         ProgressComponent,
-        GraphsComponent
+        GraphsComponent,
+        IncrementComponent,
+        DonnutGraphComponent
     ],
     imports: [
         SharedModule,
-        PAGES_ROUTES
+        FormsModule,
+        PAGES_ROUTES,
+        ChartsModule
     ],
     exports: [
         DashboardComponent,
