@@ -14,6 +14,7 @@ import { ChartsModule } from 'ng2-charts';
 // TEMPORAL
 import { IncrementComponent } from '../components/increment/increment.component';
 import { DonnutGraphComponent } from './components/donnut-graph/donnut-graph.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { DonnutGraphComponent } from './components/donnut-graph/donnut-graph.com
         ProgressComponent,
         GraphsComponent,
         IncrementComponent,
-        DonnutGraphComponent
+        DonnutGraphComponent,
+        AccountSettingsComponent
     ],
     imports: [
         SharedModule,
