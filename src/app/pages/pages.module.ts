@@ -15,6 +15,8 @@ import { ChartsModule } from 'ng2-charts';
 import { IncrementComponent } from '../components/increment/increment.component';
 import { DonnutGraphComponent } from './components/donnut-graph/donnut-graph.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RcjsComponent } from './rcjs/rcjs.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         GraphsComponent,
         IncrementComponent,
         DonnutGraphComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromesasComponent,
+        RcjsComponent
     ],
     imports: [
         SharedModule,
