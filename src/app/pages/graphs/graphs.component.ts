@@ -8,28 +8,28 @@ import { Component, OnInit } from '@angular/core';
 export class GraphsComponent implements OnInit {
   graficos: any = {
     'grafico1': {
-      'labels': ['Con Frijoles', 'Con Natilla', 'Con tocino'],
+      'labels': ['Argentina', 'Spain', 'United States'],
       'data':  [24, 30, 46],
       'type': 'doughnut',
-      'leyenda': 'El pan se come con'
+      'leyenda': 'Visitors from'
     },
     'grafico2': {
-      'labels': ['Hombres', 'Mujeres'],
-      'data':  [4500, 6000],
+      'labels': ['Male visitors', 'Female visitors'],
+      'data':  [6000, 4500],
       'type': 'doughnut',
-      'leyenda': 'Entrevistados'
+      'leyenda': 'Demographics'
     },
     'grafico3': {
-      'labels': ['Si', 'No'],
-      'data':  [95, 5],
+      'labels': ['Over 5min', 'Under 5min'],
+      'data':  [30, 70],
       'type': 'doughnut',
-      'leyenda': '¿Le dan gases los frijoles?'
+      'leyenda': 'Retention rate'
     },
     'grafico4': {
-      'labels': ['No', 'Si'],
-      'data':  [85, 15],
+      'labels': ['Saved', 'Not Saved'],
+      'data':  [65, 35],
       'type': 'doughnut',
-      'leyenda': '¿Le importa que le den gases?'
+      'leyenda': 'Visitors profile saving rate'
     },
   };
   constructor() { }
